@@ -1,0 +1,502 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(131,0,0,1) 100%);
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    background-color: black;
+    color: white;
+}
+
+.logo-home {
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+}
+
+.logo {
+    display: flex;
+    align-items: baseline;
+    font-family: 'Dongle', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.home-button {
+    font-size: 1.5rem;
+    margin-left: 8%;
+    cursor: pointer;
+}
+
+.search-user {
+    display: flex;
+    margin-right: 3%;
+    justify-content: flex-end;
+}
+
+.user-button {
+   font-size: 1.5rem;
+}
+
+.search-button {
+    font-size: 1.3rem;
+    margin-right: 50%;
+}
+.nav-tel {
+    display: none;
+}
+.nav a {
+    display: inline-block;
+    font-size: 2rem;
+    text-decoration: none;
+    font-family: 'Dongle', sans-serif;
+    margin-top: 15px;
+    padding: 20px;
+    color: white;
+}
+
+@media (max-width:720px) {
+    .nav {
+        display: none;
+    }
+    .nav-tel {
+        display: block;
+        position: sticky;
+        top: 99px;
+        text-align: center;
+        background-color: grey;
+        height: 50px;
+        z-index: 5;
+    }
+    .nav-tel a {
+        display: inline-block;
+        text-decoration: none;
+        padding: 5px 20px;
+        font-family: 'Dongle', sans-serif;
+        font-size: 2rem;
+        color: white;
+    }
+    /* LOGO ---- 
+    h1 {
+        display: none;
+    }
+    span {
+        border: 2px solid white;
+        width: 70px;
+        height: 70px;
+        padding: 0px 20px;
+        border-radius: 50% 50% 50% 10%;
+        margin-right: 20px;
+    } */
+    
+}
+/* Section Footer */
+
+#footer {
+    position: relative;
+    top: 75vh;
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+    color: rgb(14, 35, 45);
+    height: 70px;
+    z-index: 5;
+    
+}
+
+.socialm-links {
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+}
+.primaryLink {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(245, 180, 0);
+}
+.primaryLink:hover {
+    text-decoration: underline;
+}
+small {
+    color: rgb(255, 255, 255);
+}
+
+
+/* Aside section */
+
+aside {
+    position: absolute;
+    top: 40%;
+    width: 20%;
+}
+
+.categorys {
+    display: flex;
+    position: fixed;
+    left: -95px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0px;
+    font-family: 'Dongle', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    z-index: 5;
+}
+
+.categorys:hover {
+    left: 0;
+    transition: 1s;
+   
+}
+.categorys h3 {
+    line-height: 25px;
+    background-color: black;
+    padding: 15px;
+    
+}
+.nav-cat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+.categorys a {
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+.categorys a:hover {
+    color: rgb(245, 180, 0);
+}
+.nav-cat .see-more {
+    text-decoration: underline;
+}
+
+/* Hero Content */
+
+#interstellar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 65%;
+    position: absolute;
+    top: 99px;
+}
+
+.ints-pic {
+    display: block;
+    width: 50%;
+    margin-right: 5%;
+    box-shadow: 30px 0px 50px -20px rgb(0, 0, 0),
+                -30px 0px 50px -20px rgb(0, 0, 0);
+}
+
+.film-expl {
+    margin: 20px;
+    /* border: 2px solid white; */
+    padding: 10px 20px;
+    background-color: rgba(199, 199, 199, 0.2);
+    height: 380px;
+    width: 350px;
+}
+
+.film-expl h3 {
+    font-family: 'Dongle', sans-serif;
+    color: rgb(245, 180, 0);
+    font-size: 2rem;
+}
+
+.film-expl p {
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+.expl-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.watch-btn {
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    background-color: #0d66d0;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width:1350px) {
+    .ints-pic {
+        display: none;
+    }
+    #interstellar {
+        background-image: url(./wp1817976-interstellar-wallpapers.jpg);
+        align-items: flex-end;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        position: absolute;
+        top: 99px;
+        margin: 0px auto;
+    }
+
+    .watch-btn {
+        margin-bottom: 30px;
+    }
+    .film-expl {
+        width: 70%;
+        height: 300px;
+        border: none;
+        padding: auto 20px;
+        background-color: rgba(150, 150, 150, 0.3);
+    }
+    .film-expl p {
+        color: rgb(0, 0, 0);
+    }
+}
+
+@media (max-width:720px) {
+    .ints-pic {
+        width: 90%;
+        display: block;
+        margin: 30px auto;
+        margin-bottom: 0;
+    }
+    #interstellar {
+        background-image: none;
+        flex-direction: column;
+        position: absolute;
+        top: 195px;
+    }
+    .film-expl {
+        width: 90%;
+        margin-top: 0;
+        height: 350px;
+    }
+    .watch-btn {
+        margin-top: 0px;
+    }
+    .film-expl p {
+        color: rgb(255, 255, 255);
+    }
+}
+
+/* Section Beliebteste Filme */
+
+#popular-films {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 76vh;
+    left: 5%;
+    width: 90%;
+    height: 90vh;   
+    /* margin-top: 1%; */
+}
+
+#titel-ppl-fils {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+}
+.line {
+    width: 25%;
+    height: 3px;
+    background-color: rgb(245, 180, 0);
+    border-radius: 4px;
+}
+#popular-films h3 {
+    font-family: 'Dongle', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    padding: 0px 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.films {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    /* height: 350px; */
+}
+
+.film1 img {
+    width: 10vw;
+    height: auto;
+    margin-left: -10px;
+    box-shadow: -10px 0px 10px -5px rgb(0, 0, 0);
+}
+.film7 img{
+    width: 10vw;
+    height: auto;
+    margin-right: -10px;
+    box-shadow: 10px 0px 10px -5px rgb(0, 0, 0);
+}
+.film2 img {
+    width: 12vw;
+    height: auto;
+    margin-left: -15px;
+    box-shadow: -10px 0px 10px -5px rgb(0, 0, 0);
+}
+.film6 img {
+    width: 12vw;
+    height: auto;
+    margin-left: -15px;
+    box-shadow: 10px 0px 10px -5px rgb(0, 0, 0);
+}
+.film3 img {
+    width: 14vw;
+    height: auto;
+    margin-right: -20px;
+    box-shadow: -15px 0px 15px -8px rgb(0, 0, 0);
+}
+.film5 img {
+    width: 14vw;
+    height: auto;
+    margin-left: -20px;
+    box-shadow: 15px 0px 15px -8px rgb(0, 0, 0);
+}
+.film4 img{
+    width: 16vw;
+    height: auto;
+    box-shadow: 
+        20px 0px 20px -10px rgb(0, 0, 0),
+        -20px 0px 20px -10px rgb(0, 0, 0);
+}
+
+.film4 {
+    z-index: 4;
+}
+.film5 {
+    z-index: 3;
+}
+.film6 {
+    z-index: 2;
+}
+.film7 {
+    z-index: 1;
+}
+
+.blockbuster {
+    width: 285px;
+    height: 40px;
+    background-color: #0d66d0;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.films a i {
+    display: inline-block;
+    font-size: 4rem;
+    margin: 0px 40px;
+    color: white;
+    text-shadow: 0px 0px 15px black;
+}
+.films a i:hover {
+    color: rgb(245, 180, 0);
+    transition: 1s;
+}
+
+.bottom-line {
+    width: 80%;
+    height: 3px;
+    background-color: rgb(245, 180, 0);
+}
+@media (max-width:1350px) {
+    #popular-films {
+        border: 3px solid rgb(245, 180, 0);
+        height: 100%;
+        padding: 5% 0px 2% 0px;
+        margin-bottom: 800px;
+        margin-top: 3%;
+    }
+    .films {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 95%;
+        margin: 3% 0px;
+    }
+    .line {
+        display: none;
+    }
+    .film1, .film2, .film3, .film4, .film5, .film6 {
+        margin: 3%;
+        border: 1px solid rgb(245, 180, 0);
+        flex-basis: 25%;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    .film4 { order: 1; }
+    .film5 { order: 2; }
+    .film3 { order: 3; }
+    .film2 { order: 4; }
+    .film6 { order: 5; }
+    .film1 { order: 6; }
+
+    .film1 img, .film2 img, .film3 img, .film4 img, .film5 img, .film6 img {
+        width: 100%;
+        margin: 0px auto;
+        box-shadow: 
+            -20px 0px 20px -10px rgb(0, 0, 0),
+             20px 0px 20px -10px rgb(0, 0, 0);
+    }
+    .film7 {
+        display: none;
+    }
+    .films a i{
+        display: none;
+    }
+    .blockbuster {
+        margin-bottom: 50px;
+    }
+    .bottom-line {
+        display: none;
+    }
+    #footer {
+        top: 0;
+        padding-bottom: 70px;
+    }
+}
+
+@media (max-width:720px) {
+    #popular-films{
+        margin-top: 150px;
+    }
+    .film1, .film2, .film3, .film4, .film5, .film6 {
+        margin: 3%;
+        border: 1px solid rgb(245, 180, 0);
+        flex-basis: 40%;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+}
+
