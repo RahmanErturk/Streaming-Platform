@@ -78,7 +78,7 @@ header {
         position: sticky;
         top: 99px;
         text-align: center;
-        background-color: grey;
+        background-color: rgb(75, 75, 75);
         height: 50px;
         z-index: 5;
     }
@@ -88,7 +88,7 @@ header {
         padding: 5px 20px;
         font-family: 'Dongle', sans-serif;
         font-size: 2rem;
-        color: white;
+        color: rgb(245, 180, 0);
     }
     /* LOGO ---- 
     h1 {
@@ -107,6 +107,8 @@ header {
 /* Section Footer */
 
 #footer {
+    position: relative;
+    top: 75vh;
     width: 100%;
     padding-top: 10px;
     text-align: center;
