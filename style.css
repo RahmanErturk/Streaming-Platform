@@ -115,7 +115,7 @@ header {
     color: rgb(14, 35, 45);
     /* height: 70px; */
     z-index: 5;
-    
+    font-family: 'Inter', sans-serif;
 }
 
 .socialm-links {
@@ -482,8 +482,7 @@ aside {
         display: none;
     }
     #footer {
-        top: 0;
-        padding-bottom: 70px;
+        display: none;
     }
 }
 
@@ -529,9 +528,6 @@ aside {
         text-align: center;
     }
     #footer {
-        font-size: 12px;
-        padding-bottom: 0;
-        margin-bottom: 0;
-        font-family: 'Inter', sans-serif;
+        display: none;
     }
 }
